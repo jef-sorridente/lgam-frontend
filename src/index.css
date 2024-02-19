@@ -1,13 +1,48 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: var(--background-color-white);
+}
+
+:root {
+  --background-color-white: #ececec;
+}
+
+.App {
+  margin: 0 250px;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  margin-top: 150px;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.about,
+.affiliated,
+.championships,
+.gallery,
+.ranking,
+.contact {
+  animation: frame-opacity 0.5s alternate;
+}
+
+@keyframes frame-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
 }

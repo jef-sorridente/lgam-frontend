@@ -1,0 +1,30 @@
+.about {
+  flex: 2;
+}
+.about-img {
+  flex: 1;
+}
+
+.about p {
+  margin-top: 25px;
+  width: 550px;
+  font-size: 20px;
+}
+
+.about-image {
+  z-index: -2;
+  position: fixed;
+  right: 0;
+  width: 80%;
+}
+
+.about-image-figth {
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  top: 180px;
+}
+
+.about-image, .about-image-figth {
+  animation: frame-opacity 1s alternate;
+}
