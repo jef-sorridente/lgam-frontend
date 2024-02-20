@@ -25,6 +25,7 @@
   top: 180px;
 }
 
-.about-image, .about-image-figth {
+.about-image,
+.about-image-figth {
   animation: frame-opacity 1s alternate;
 }

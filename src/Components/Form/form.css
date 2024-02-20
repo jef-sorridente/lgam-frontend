@@ -1,0 +1,14 @@
+.form {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+  border-collapse: collapse;
+}
+
+.form tbody tr th {
+  border-bottom: 1px solid #000;
+}
+
+.form tbody tr {
+}
