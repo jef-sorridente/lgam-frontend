@@ -8,36 +8,13 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 //Pages
 import About from "./Pages/About";
 //import Affiliated from "./Pages/Affiliated";
-import Form from "./Components/Form"
+import Form from "./Components/Form";
 import Championships from "./Pages/Championships";
 import Gallery from "./Pages/Gallery";
 import Ranking from "./Pages/Ranking";
 import Contact from "./Pages/Contact/contact";
 
-function App() {
-  const filiados = [
-    {
-      nome: "Jeferson Soares",
-      graduacao: "2°Dan",
-      estado: "RS",
-      idade: 24,
-      academia: "Kim Yu Shin",
-    },
-    {
-      nome: "Jeferson Soares",
-      graduacao: "2°Dan",
-      estado: "RS",
-      idade: 24,
-      academia: "Kim Yu Shin",
-    },
-    {
-      nome: "Jeferson Soares",
-      graduacao: "2°Dan",
-      estado: "RS",
-      idade: 24,
-      academia: "Kim Yu Shin",
-    },
-  ];
+function AppRoutes() {
   return (
     <BrowserRouter>
       <div className="App">
@@ -50,6 +27,7 @@ function App() {
           <Route path="/galeria" element={<Gallery />} />
           <Route path="/ranking" element={<Ranking />} />
           <Route path="/contato" element={<Contact />} />
+          <Route path="*" element={<div>Página não encontrada</div>} />
         </Routes>
         <Footer />
       </div>
@@ -57,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppRoutes;

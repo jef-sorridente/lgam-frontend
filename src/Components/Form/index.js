@@ -1,6 +1,34 @@
 import "./form.css";
+import { v4 as uuidv4 } from "uuid";
 
 const Form = () => {
+  const filiados = [
+    {
+      id: uuidv4(),
+      nome: "Jeferson Soares",
+      graduacao: "2°Dan",
+      estado: "RS",
+      idade: 24,
+      academia: "Kim Yu Shin",
+    },
+    {
+      id: uuidv4(),
+      nome: "Jeferson Soares",
+      graduacao: "2°Dan",
+      estado: "RS",
+      idade: 24,
+      academia: "Kim Yu Shin",
+    },
+    {
+      id: uuidv4(),
+      nome: "Jeferson Soares",
+      graduacao: "2°Dan",
+      estado: "RS",
+      idade: 24,
+      academia: "Kim Yu Shin",
+    },
+  ];
+
   return (
     <div className="container">
       <div className="form">
@@ -10,18 +38,17 @@ const Form = () => {
             <tr>
               <th>Nome</th>
               <th>Graduação</th>
-              <th>Localização</th>
               <th>Idade</th>
               <th>Academia</th>
             </tr>
-
-            <tr>
-              <td>Jeferson Soares</td>
-              <td>2º Dan</td>
-              <td>Novo Hamburgo - RS</td>
-              <td>24 Anos</td>
-              <td>Kim</td>
-            </tr>
+            {filiados.map((filiado) => (
+              <tr key={filiado.id}>
+                <td>{filiado.nome}</td>
+                <td>{filiado.graduacao}</td>
+                <td>{filiado.idade}</td>
+                <td>{filiado.academia}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
