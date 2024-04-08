@@ -25,8 +25,8 @@ body {
 }
 
 .title {
-  font-size: 3.5rem;
-  font-weight: 600;
+  font-size: 3rem;
+  font-weight: 500;
 }
 
 .about,
@@ -34,7 +34,8 @@ body {
 .championships,
 .gallery,
 .ranking,
-.contact {
+.contact,
+.login {
   animation: frame-opacity 0.5s alternate;
 }
 

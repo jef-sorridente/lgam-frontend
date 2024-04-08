@@ -6,8 +6,8 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="navbar-logo">
-        <img src={logo} alt="Logo LGAM" />
-        <h2>Liga Gaúcha de Artes Marciais</h2>
+        {/**<img src={logo} alt="Logo LGAM" />
+        <h2>Liga Gaúcha de Artes Marciais</h2> */}
       </div>
       <div className="navbar-menu">
         <ul>
@@ -22,7 +22,8 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/afiliados"
-              className={({ isActive }) => (isActive ? "active" : "no-active")}
+              className="disable"
+              title="Em Breve"
             >
               Afiliados
             </NavLink>
@@ -46,7 +47,8 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/ranking"
-              className={({ isActive }) => (isActive ? "active" : "no-active")}
+              className="disable"
+              title="Em Breve"
             >
               Ranking
             </NavLink>
@@ -57,6 +59,14 @@ const Navbar = () => {
               className={({ isActive }) => (isActive ? "active" : "no-active")}
             >
               Contato
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/login"
+              className={({ isActive }) => (isActive ? "active" : "no-active")}
+            >
+              Login
             </NavLink>
           </li>
         </ul>

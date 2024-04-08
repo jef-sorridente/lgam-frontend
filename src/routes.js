@@ -13,6 +13,7 @@ import Championships from "./Pages/Championships";
 import Gallery from "./Pages/Gallery";
 import Ranking from "./Pages/Ranking";
 import Contact from "./Pages/Contact/contact";
+import Login from "./Pages/Login/index";
 
 function AppRoutes() {
   return (
@@ -22,11 +23,12 @@ function AppRoutes() {
         <Routes>
           <Route path="/" element={<About />} />
           {/*<Route path="/afiliados" element={<Affiliated />} />*/}
-          <Route path="/afiliados" element={<Form />} />
+          {/*<Route path="/afiliados" element={<Form />} />*/}
           <Route path="/eventos" element={<Championships />} />
           <Route path="/galeria" element={<Gallery />} />
-          <Route path="/ranking" element={<Ranking />} />
+          {/*<Route path="/ranking" element={<Ranking />} />*/}
           <Route path="/contato" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
           <Route path="*" element={<div>Página não encontrada</div>} />
         </Routes>
         <Footer />

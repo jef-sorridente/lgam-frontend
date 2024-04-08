@@ -1,0 +1,80 @@
+.login {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid #cdcdcd;
+}
+.login .login-art,
+.login .login-connect {
+  flex: 1;
+  height: 600px;
+}
+
+.login-art {
+  background-color: #fff;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.login-art p {
+  margin: 15px 0 0 15px;
+}
+
+.login-art span {
+  margin: 15px 0 15px 15px;
+}
+
+.login-connect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-connect-title {
+  text-align: center;
+}
+
+.login-connect-title {
+  margin: 25px 0;
+}
+
+.login-connect-title h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.login-connect-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  width: 450px;
+  height: 30px;
+  padding: 12px 6px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #cdcdcd;
+  margin: 3px 0;
+}
+
+.login-button {
+  width: 450px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 3px 0;
+  background-color: #09090b;
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.login-button:hover{
+    background-color: #404040;
+    transition: 0.3s;
+}

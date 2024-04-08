@@ -7,7 +7,8 @@ const About = () => {
     
     <main className="container">
       <div className="about">
-        <h3 className="title">Venha fazer parte da Liga Gaúcha de Artes Marciais</h3>
+        
+        <h3 className="title">Liga Gaúcha de Artes Marciais</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
           volutpat enim dolor, eu euismod ante semper at. Curabitur pellentesque
@@ -18,8 +19,10 @@ const About = () => {
         </p>
       </div>
       <div className="about-img">
+        {/**
         <img className="about-image-figth" src={lutadores} alt="" />
         <img className="about-image" src={linhas} alt="" />
+         */}
       </div>
     </main>
   );
