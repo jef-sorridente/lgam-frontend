@@ -14,7 +14,7 @@ body {
 }
 
 .App {
-  margin: 0 250px;
+  margin: 0 10%;
   overflow: hidden;
 }
 
@@ -27,6 +27,7 @@ body {
 .title {
   font-size: 3rem;
   font-weight: 500;
+  margin-bottom: 25px;
 }
 
 .about,
