@@ -6,8 +6,8 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="navbar-logo">
-        {/**<img src={logo} alt="Logo LGAM" />
-        <h2>Liga Gaúcha de Artes Marciais</h2> */}
+        <img src={logo} alt="Logo LGAM" />
+        <h2>Liga Gaúcha de Artes Marciais</h2>
       </div>
       <div className="navbar-menu">
         <ul>
@@ -20,11 +20,7 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/afiliados"
-              className="disable"
-              title="Em Breve"
-            >
+            <NavLink to="/afiliados" className="disable" title="Em Breve">
               Afiliados
             </NavLink>
           </li>
@@ -45,11 +41,7 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/ranking"
-              className="disable"
-              title="Em Breve"
-            >
+            <NavLink to="/ranking" className="disable" title="Em Breve">
               Ranking
             </NavLink>
           </li>

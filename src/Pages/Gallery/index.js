@@ -1,5 +1,5 @@
 import "./gallery.css";
-import image from "../../Img/default-image.png";
+import image from "../../Img/tkd.jpg";
 
 const Gallery = () => {
   return (
