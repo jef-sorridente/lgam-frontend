@@ -15,13 +15,11 @@ body {
 
 .App {
   margin: 0 10%;
-  overflow: hidden;
 }
 
 .container {
   display: flex;
   margin-top: 5%;
-  overflow: hidden;
 }
 
 .title {
