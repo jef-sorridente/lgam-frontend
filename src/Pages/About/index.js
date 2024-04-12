@@ -17,8 +17,10 @@ const About = () => {
         </p>
       </div>
       <div className="about-img">
+        {/*
         <img className="about-image-figth" src={lutadores} alt="" />
         <img className="about-image" src={linhas} alt="" />
+        */}
       </div>
     </main>
   );

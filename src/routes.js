@@ -28,7 +28,7 @@ function AppRoutes() {
           <Route path="/galeria" element={<Gallery />} />
           {/*<Route path="/ranking" element={<Ranking />} />*/}
           <Route path="/contato" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
+          {/*<Route path="/login" element={<Login />} />*/}
           <Route path="*" element={<div>Página não encontrada</div>} />
         </Routes>
         <Footer />
